@@ -113,7 +113,7 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 .dot{width:9px;height:9px;border-radius:50%}
 .dot-r{background:#ff5f57}.dot-y{background:#febc2e}.dot-g{background:#28c840}
 .output-label{font-size:10px;color:var(--text-3);letter-spacing:2px;text-transform:uppercase}
-.output-body{padding:18px;min-height:100px;font-size:12px;line-height:1.8;color:var(--text);white-space:pre-wrap;word-break:break-word;font-family:'SF Mono','Cascadia Code','Consolas',monospace;max-height:460px;overflow-y:auto;}
+.output-body{padding:12px 14px;min-height:100px;font-size:10.5px;line-height:1.8;color:var(--text);white-space:pre-wrap;word-break:break-word;font-family:'SF Mono','Cascadia Code','Consolas',monospace;max-height:320px;overflow-y:auto;}
 .output-body::-webkit-scrollbar{width:4px}
 .output-body::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
 .output-ph{color:var(--text-3);font-family:inherit;font-size:13px;font-style:italic;font-weight:400}
@@ -304,6 +304,8 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
     </button>
   </div>
 
+  <div id="randomTag" style="display:none;width:100%;box-sizing:border-box;padding:16px 24px;margin-bottom:12px;background:#000;border:1px solid rgba(201,146,42,.75);border-radius:16px;color:#c8a97e;font-size:16px;font-weight:600;letter-spacing:.8px;text-align:center;"></div>
+
   <div class="sec">
     <div class="sec-label">生成結果</div>
     <div class="output-shell" id="outputShell">
@@ -319,16 +321,19 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
       <div class="out-actions" id="outActions" style="display:none">
         <button class="copy-btn" id="copyBtn" onclick="doCopy()">📋 複製咒語</button>
         <button class="clr-btn" onclick="doClear()">清除</button>
+        <button class="clr-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆ 回首頁</button>
       </div>
     </div>
   </div>
+
+  <div id="randomTag2" style="display:none;width:100%;box-sizing:border-box;padding:16px 24px;margin-top:12px;background:#000;border:1px solid rgba(201,146,42,.75);border-radius:16px;color:#c8a97e;font-size:16px;font-weight:600;letter-spacing:.8px;text-align:center;"></div>
 
 </div>
 
 <div class="footer">
   <div class="footer-divider"></div>
   紅兵風格寫真咒語產生器測試版 · 台灣景點 &amp; 漢服古裝
-  <div style="margin-top:10px;font-size:10px;opacity:.6">紅兵開發 · 測試版 · 核心規範 v1.1</div>
+  <div style="margin-top:10px;font-size:10px;opacity:.6">紅兵開發 · 測試版 · 核心規範 v1.2</div>
 </div>
 
 </div>
